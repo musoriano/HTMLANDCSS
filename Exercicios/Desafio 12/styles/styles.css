@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Sriracha", cursive;
+    --font3: "Passion One", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html body {
+    font-family: var(--font1);
+    background-color: darkgray;
+    min-height: 100vh;
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font3);
+}
+
+header p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font2);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
+    font-weight: normal;
+    text-shadow: 1px 1 px 0px black; 
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: rgba(0, 0, 0, 0.594);
+    color: white;
+    
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.37);
+    background-attachment: fixed;
+}    
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.37);
+    background-attachment: fixed;
+}
+
+section.normal > p {
+    padding-left: 10px;
+}
+
+section.image > p {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.372);
+    border-radius: 5px;
+}
+footer {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
